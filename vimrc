@@ -41,3 +41,4 @@ set ruler                     " show cursor position
 " show trailing whitespaces
 set listchars=tab:>-,trail:.
 set list
+set tags=./tags,tags         " use ctags for fast navigation

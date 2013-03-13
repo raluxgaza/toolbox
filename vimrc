@@ -19,6 +19,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
 
 " -----------------
 " vim look and feel

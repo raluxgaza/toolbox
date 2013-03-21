@@ -1,3 +1,6 @@
+" https://github.com/New-Bamboo/Hermes/blob/master/hermes/vimrc
+" Useful link above
+"
 " -------------------------
 " Vundle configuration/setup
 " -------------------------
@@ -46,6 +49,7 @@ set number                    " line numbers
 set ruler                     " show cursor position
 set ttyfast                   " vim scroll fast
 set laststatus=2              " Always display the status line for powerline
+set noswapfile                " Vim 2012
 
 " Fix backspace
 set backspace=indent,eol,start

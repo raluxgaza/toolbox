@@ -24,7 +24,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
-" Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline'
 
 " -----------------
 " vim look and feel
@@ -43,8 +43,10 @@ set hlsearch!                 " highlight search
 set autoindent                " auto indent
 set wildignore=*.swp,*.bak    " ignore wildcards
 set number                    " line numbers
-" set ruler                     " show cursor position
+set ruler                     " show cursor position
 set ttyfast                   " vim scroll fast
+
+map <leader>n :NERDTreeToggle<cr>
 
 " show trailing whitespaces
 set listchars=tab:>-,trail:.
@@ -55,7 +57,6 @@ set tags=./tags,tags         " use ctags for fast navigation
 " powerline
 " python import sys; sys.path.append("/Library/Python/2.7/site-packages")
 " python from powerline.bindings.vim import powerline; powerline()
-python from powerline.vim import VimPowerline
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-" set rtp+=~/.vim/bundle/vim-powerline/plugin/Powerline.vim
-nmap <\-n> :NERDTreeToggle<cr>
+" python from powerline.vim import VimPowerline
+" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set rtp+=~/.vim/bundle/vim-powerline/plugin/Powerline.vim

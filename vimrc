@@ -27,7 +27,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
-" Bundle 'Lokaltog/vim-powerline'
 
 " -----------------
 " vim look and feel
@@ -38,11 +37,12 @@ colorscheme jellybeans        " colorscheme
 syntax on                     " syntax hightlighting
 filetype plugin indent on     " turn on filetype detection
 
+map <leader>n :NERDTreeToggle<cr>
+
 set expandtab                 " use space rather than tabs
 set tabstop=2                 " 2 space tab
 set shiftwidth=2              " number of spaces inserted for indentation
 set smarttab                  " insert tabs on the start of a line according to shiftwidth, not
-set hlsearch!                 " highlight search
 set autoindent                " auto indent
 set wildignore=*.swp,*.bak    " ignore wildcards
 set number                    " line numbers
@@ -51,18 +51,29 @@ set ttyfast                   " vim scroll fast
 set laststatus=2              " Always display the status line for powerline
 set noswapfile                " Vim 2012
 
-" Fix backspace
-set backspace=indent,eol,start
-fixdel
+set hlsearch                  " highlight matches
+set incsearch                 " incremental searching
+set ignorecase                " searches are case insensitive...
+set smartcase                 " ... unless they contain at least one capital letter
+set nowrap                    " don't wrap lines
+set backspace=indent,eol,start " fix backspace key 
 
-map <leader>n :NERDTreeToggle<cr>
+" Disable output and VCS files
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+
+" Ignore bundler and sass cache
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
 
 " show trailing whitespaces
 set listchars=tab:>-,trail:.
 set list
-
 set tags=./tags,tags         " use ctags for fast navigation
-
 
 " powerline
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim

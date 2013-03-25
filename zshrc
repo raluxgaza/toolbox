@@ -53,6 +53,10 @@ alias rake='noglob rake'
 # Use 256 color
 export TERM="xterm-256color"
 
+# Colorful terminal output
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 # auto disable window title and auto update
 DISABLE_AUTO_TITLE=true
 

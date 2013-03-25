@@ -1,0 +1,27 @@
+
+# Bundler
+alias be="bundle exec"
+alias bu="bundle update"
+alias bi="bundle install"
+alias ss="bundle exec script/server"
+alias ber="bundle exec rake"
+alias sc="bundle exec script/console --irb=pry"
+alias bes="bundle exec spec"
+alias cap="bundle exec cap"
+
+alias tmux="tmux -2" # force 256 color
+
+# Test Runs
+alias htps='be rake parallel:fast_prepare;be rake parallel:spec'
+alias htpf='be rake parallel:fast_prepare;be rake parallel:safe_features'
+alias cuke='be cucumber'
+alias db='ber db:migrate;ber db:test:prepare'
+
+alias rake='noglob rake'
+
+# Rails
+alias gofast='ruby -i -pe "gsub /cache_classes \= (.+)$/, \"cache_classes = true\"" config/environments/development.rb'
+alias goslow='ruby -i -pe "gsub /cache_classes \= (.+)$/, \"cache_classes = false\"" config/environments/development.rb'
+alias tdl='tail -f ./log/development.log'
+alias ttl='tail -f ./log/test.log'
+alias rst='touch ./tmp/restart.txt'

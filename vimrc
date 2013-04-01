@@ -41,9 +41,6 @@ set ttymouse=xterm2
 
 set term=xterm-256color
 
-" Clipboard fix for OsX
-set clipboard=unnamed
-
 " Autocomplete options
 set wildmode=list:longest,list:full
 set complete=.,w,b

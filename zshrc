@@ -20,6 +20,8 @@ ZSH_THEME="muse"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
+DISABLE_AUTO_TITLE="true"
+
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
 

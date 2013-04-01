@@ -33,6 +33,20 @@ Bundle 'scrooloose/nerdtree'
 " -----------------
 set encoding=utf-8             " encoding
 colorscheme jellybeans         " colorscheme
+let g:Powerline_symbols = 'fancy'
+
+" Enable mouse use in all modes
+set mouse=a
+set ttymouse=xterm2
+
+set term=xterm-256color
+
+" Clipboard fix for OsX
+set clipboard=unnamed
+
+" Autocomplete options
+set wildmode=list:longest,list:full
+set complete=.,w,b
 
 syntax on                      " syntax hightlighting
 filetype plugin indent on      " turn on filetype detection

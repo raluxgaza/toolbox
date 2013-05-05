@@ -3,7 +3,7 @@
 alias be="bundle exec"
 alias bu="bundle update"
 alias bi="bundle install"
-alias ss="bundle exec script/server"
+alias rs="bundle exec rails server"
 alias ber="bundle exec rake"
 alias sc="bundle exec script/console --irb=pry"
 alias bes="bundle exec spec"

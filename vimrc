@@ -27,6 +27,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
 
 " -----------------
 " vim look and feel

@@ -26,7 +26,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 
 " -----------------
@@ -48,8 +47,6 @@ set complete=.,w,b
 
 syntax on                      " syntax hightlighting
 filetype plugin indent on      " turn on filetype detection
-
-map <leader>n :NERDTreeToggle<cr>
 
 set expandtab                  " use space rather than tabs
 set tabstop=2                  " 2 space tab

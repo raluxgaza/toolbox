@@ -32,7 +32,7 @@ Bundle 'ervandew/supertab'
 " vim look and feel
 " -----------------
 set encoding=utf-8             " encoding
-colorscheme jellybeans         " colorscheme
+colorscheme ir_black         " colorscheme
 let g:Powerline_symbols = 'fancy'
 
 " Enable mouse use in all modes

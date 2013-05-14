@@ -74,6 +74,7 @@ set listchars=tab:\ \          " a tab should display as "  ", trailing whitespa
 set listchars+=trail:.         " show trailing spaces as dots
 set listchars+=extends:>       " The character to show in the last column when wrap is
 set listchars+=precedes:<      " The character to show in the last column when wrap is
+set clipboard=unnamed          " To fix tmux copy/paste issues.
 
 
 " Disable output and VCS files

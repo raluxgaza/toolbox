@@ -5,7 +5,7 @@
 " Vundle configuration/setup
 " -------------------------
 set nocompatible      " be improved
-set t_Co=256          " pretty color
+" set t_Co=256          " pretty color
 filetype off          " required for vundle
 
 set rtp+=~/.vim/bundle/vundle/
@@ -33,14 +33,11 @@ Bundle 'Valloric/YouCompleteMe'
 " vim look and feel
 " -----------------
 set encoding=utf-8             " encoding
-colorscheme ir_black         " colorscheme
-let g:Powerline_symbols = 'fancy'
+colorscheme jellybeans         " colorscheme
 
 " Enable mouse use in all modes
 set mouse=a
 set ttymouse=xterm2
-
-set term=xterm-256color
 
 " Autocomplete options
 set wildmode=list:longest,list:full

@@ -5,7 +5,7 @@
 " Vundle configuration/setup
 " -------------------------
 set nocompatible      " be improved
-" set t_Co=256          " pretty color
+set t_Co=256          " pretty color
 filetype off          " required for vundle
 
 set rtp+=~/.vim/bundle/vundle/
@@ -34,6 +34,7 @@ Bundle 'Valloric/YouCompleteMe'
 " -----------------
 set encoding=utf-8             " encoding
 colorscheme jellybeans         " colorscheme
+set term=xterm-256color        " tmux font rendering
 
 " Enable mouse use in all modes
 set mouse=a
@@ -87,5 +88,8 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
-" powerline
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+" powerline linux
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" powerline osx
+" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim

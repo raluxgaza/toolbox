@@ -28,6 +28,7 @@ Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'mileszs/ack.vim'
 Bundle 'ervandew/supertab'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'MartinLafreniere/vim-PairTools'
 
 " -----------------
 " vim look and feel

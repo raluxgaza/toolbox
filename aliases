@@ -5,7 +5,7 @@ alias bu="bundle update"
 alias bi="bundle install"
 alias rs="bundle exec rails server"
 alias ber="bundle exec rake"
-alias sc="bundle exec script/console --irb=pry"
+alias rc="bundle exec rails console"
 alias bes="bundle exec spec"
 alias cap="bundle exec cap"
 
@@ -21,7 +21,7 @@ alias l='ls -CF'
 alias htps='be rake parallel:fast_prepare;be rake parallel:spec'
 alias htpf='be rake parallel:fast_prepare;be rake parallel:safe_features'
 alias cuke='be cucumber'
-alias db='ber db:migrate;ber db:test:prepare'
+alias db='ber db:migrate;ber db:test:prepare;annotate'
 
 alias rake='noglob rake'
 

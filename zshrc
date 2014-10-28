@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="muse"
+ZSH_THEME="kolo"
 
 # powerline config
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -46,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Use vim as git editor
 export EDITOR=vim
+export BUNDLER_EDITOR=/usr/local/bin/vim
 
 # Start tmux properly
 #alias tmux="TERM=screen-256color-bce tmux"
@@ -53,11 +54,11 @@ export EDITOR=vim
 alias rake='noglob rake'
 
 # Use 256 color
-export TERM="xterm-256color"
+# export TERM="xterm-256color"
 
 # Colorful terminal output
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # auto disable window title and auto update
 DISABLE_AUTO_TITLE=true
@@ -77,4 +78,4 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.8
 export PATH=/Users/ralphsheks/.rbenv/shims:/Users/ralphsheks/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/x11/bin:/users/ralphsheks/.rbenv/bin:/users/ralphsheks/.rbenv/shims:/opt/local/bin:/Applications/Firefox.app/Contents/MacOS:/usr/local/lib/python2.7/site-packages
 
 #ruby setup
-eval "$(rbenv init -)"
+val "$(rbenv init -)"

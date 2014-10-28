@@ -5,8 +5,7 @@ alias bu="bundle update"
 alias bi="bundle install"
 alias rs="bundle exec rails server"
 alias ber="bundle exec rake"
-alias sc="bundle exec script/console --irb=pry"
-alias bes="bundle exec spec"
+alias bes="bundle exec rspec"
 alias cap="bundle exec cap"
 
 alias tmux="tmux -2" # force 256 color
@@ -15,7 +14,7 @@ alias tmux="tmux -2" # force 256 color
 alias htps='be rake parallel:fast_prepare;be rake parallel:spec'
 alias htpf='be rake parallel:fast_prepare;be rake parallel:safe_features'
 alias cuke='be cucumber'
-alias db='ber db:migrate;ber db:test:prepare'
+alias db='ber db:migrate;ber db:test:prepare;be annotate'
 
 alias rake='noglob rake'
 
@@ -25,3 +24,26 @@ alias goslow='ruby -i -pe "gsub /cache_classes \= (.+)$/, \"cache_classes = fals
 alias tdl='tail -f ./log/development.log'
 alias ttl='tail -f ./log/test.log'
 alias rst='touch ./tmp/restart.txt'
+# alias rails="bundle exec rails"
+alias rg="rails generate"
+alias rc="rails console"
+alias rgm="rg migration"
+alias rgmd="rg model"
+alias rgc="rg controller"
+alias beer="ber routes"
+
+# Tmux
+alias t="tmux"
+alias tls="tmux ls"
+alias ta="tmux attach -t"
+alias tn="tmux new -s"
+alias tk="tmux kill-session -t"
+
+# Tmuxinator
+alias fire="tmuxinator dev"
+
+# rbenv
+alias vers="rbenv versions"
+
+# Use macvim's vim as main vim
+alias vim="mvim -v"

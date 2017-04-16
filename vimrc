@@ -5,13 +5,9 @@
 " " Vundle configuration/setup
 " " -------------------------
 set nocompatible      " be improved
-<<<<<<< HEAD
-=======
 set t_Co=256          " pretty color
->>>>>>> 195069a1f9a15275c304da303d6538f106a10500
 filetype off          " required for vundle
 
-" set t_Co=256          " pretty color
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,7 +19,6 @@ Plugin 'gmarik/Vundle.vim'
 " ------------------------------------
 " Original repos on github for vim PLUGINS via vundle
 " ------------------------------------
-<<<<<<< HEAD
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails.git'
 Plugin 'tpope/vim-commentary'
@@ -44,24 +39,14 @@ Plugin 'tmhedberg/matchit'   " % matching
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-=======
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'jeetsukumaran/vim-buffergator'
-Bundle 'mileszs/ack.vim'
-Bundle 'ervandew/supertab'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'MartinLafreniere/vim-PairTools'
 
->>>>>>> 195069a1f9a15275c304da303d6538f106a10500
 " -----------------
 " vim look and feel
 " -----------------
 set encoding=utf-8             " encoding
+
+set modifiable
+set t_Co=256          " pretty color
 
 " Special setup for solarized theme
 syntax enable
@@ -111,14 +96,11 @@ set listchars+=trail:.         " show trailing spaces as dots
 set listchars+=extends:>       " The character to show in the last column when wrap is
 set listchars+=precedes:<      " The character to show in the last column when wrap is
 set clipboard=unnamed          " To fix tmux copy/paste issues.
-<<<<<<< HEAD
+
 " nnoremap <esc> :noh<return><esc>  " Map esc to clear highlight search
 let g:tagbar_usearrows = 1     " Toggle tagbar
 nnoremap <leader>\ :TagbarToggle<CR>
-=======
-nnoremap <esc> :noh<return><esc>  " Map esc to clear highlight search
-
->>>>>>> 195069a1f9a15275c304da303d6538f106a10500
+" nnoremap <esc> :noh<return><esc>  " Map esc to clear highlight search
 
 " Disable output and VCS files
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem

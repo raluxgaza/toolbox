@@ -54,6 +54,7 @@ set modifiable
 
 " let g:solarized_use16 = 1
 syntax enable
+set termguicolors
 set t_Co=256                      " pretty color
 set term=xterm-256color           " tmux font rendering
 set background=dark

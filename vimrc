@@ -43,16 +43,28 @@ filetype plugin indent on    " required
 " -----------------
 " vim look and feel
 " -----------------
-set encoding=utf-8             " encoding
-
+set encoding=utf-8           " encoding
 set modifiable
-set t_Co=256          " pretty color
 
-" Special setup for solarized theme
+"'''''''''''''
+
+" colorscheme
+
+"'''''''''''''
+
+" let g:solarized_use16 = 1
 syntax enable
+set t_Co=256                      " pretty color
+set term=xterm-256color           " tmux font rendering
 set background=dark
-colorscheme jellybeans         " colorscheme
-set term=xterm-256color        " tmux font rendering
+colorscheme solarized8_dark_high  " colorscheme
+
+"'''''''''''''
+
+" colorscheme
+
+"'''''''''''''
+
 
 " Enable mouse use in all modes
 set mouse=a
@@ -113,9 +125,3 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
-
-" powerline linux
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
-" powerline osx
-" source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim

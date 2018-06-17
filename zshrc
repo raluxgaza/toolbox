@@ -51,7 +51,7 @@ export BUNDLER_EDITOR=/usr/local/bin/vim
 # Start tmux properly
 #alias tmux="TERM=screen-256color-bce tmux"
 
-alias rake='noglob rake'
+# alias rake='noglob rake'
 
 # Use 256 color
 # export TERM="xterm-256color"
@@ -61,21 +61,10 @@ alias rake='noglob rake'
 # export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # auto disable window title and auto update
-DISABLE_AUTO_TITLE=true
+# DISABLE_AUTO_TITLE=true
 
-# Make ruby faster
-export RUBY_HEAP_FREE_MIN=100000
-export RUBY_FREE_MIN=500000
-export RUBY_HEAP_MIN_SLOTS=600000
-export RUBY_HEAP_SLOTS_INCREMENT=10000
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.8
-
-# tmuxinator
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-# Customize to your needs...
-export PATH=/Users/ralphsheks/.rbenv/shims:/Users/ralphsheks/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/x11/bin:/users/ralphsheks/.rbenv/bin:/users/ralphsheks/.rbenv/shims:/opt/local/bin:/Applications/Firefox.app/Contents/MacOS:/usr/local/lib/python2.7/site-packages
+# dircolor to display colorized ls list
+eval "$(gdircolors ~/.dir_colors/dircolors.256dark)"
 
 #ruby setup
-val "$(rbenv init -)"
+eval "$(rbenv init -)"

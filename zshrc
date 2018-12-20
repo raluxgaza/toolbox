@@ -57,14 +57,14 @@ export BUNDLER_EDITOR=/usr/local/bin/vim
 # export TERM="xterm-256color"
 
 # Colorful terminal output
-# export CLICOLOR=1
+# export CLICOLOR=YES
 # export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # auto disable window title and auto update
 # DISABLE_AUTO_TITLE=true
 
 # dircolor to display colorized ls list
-eval "$(gdircolors ~/.dir_colors/dircolors.256dark)"
+# eval "$(gdircolors ~/.dir_colors/dircolors.256dark)"
 
 #ruby setup
 eval "$(rbenv init -)"

@@ -11,7 +11,7 @@ alias cap="bundle exec cap"
 alias tmux="tmux -2" # force 256 color
 
 # bash aliases
-alias ls='ls --color=auto'
+alias ls='ls'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -20,7 +20,7 @@ alias l='ls -CF'
 alias htps='be rake parallel:fast_prepare;be rake parallel:spec'
 alias htpf='be rake parallel:fast_prepare;be rake parallel:safe_features'
 alias cuke='be cucumber'
-alias db='ber db:migrate;ber db:test:prepare;be annotate'
+alias db='ber db:migrate;be annotate'
 
 alias rake='noglob rake'
 

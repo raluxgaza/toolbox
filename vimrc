@@ -58,7 +58,8 @@ set termguicolors
 set t_Co=256                      " pretty color
 set term=xterm-256color           " tmux font rendering
 set background=dark
-colorscheme solarized8_dark_high  " colorscheme
+" colorscheme base16-solarized-dark  " colorscheme
+colorscheme rusticated  " colorscheme
 
 "'''''''''''''
 
